@@ -11,13 +11,13 @@
 **HINT: Utiliser ENTRYPOINT et COPY. Ne pas utiliser entrypoint.sh**
 
 Créer le dockerfile
-```docker build . -t batch```
+```docker build . -t batch:0.0.1```
 
 ### Exécuter l'image sans paramètre
-```docker run --rm batch```
+```docker run --rm batch:0.0.1```
 
 ### Exécuter l'image avec les paramètres ```elasticsearch http://monelasticsearch:9200```
-```docker run --rm batch "elasticsearch" http://monelasticsearch:9200```
+```docker run --rm batch:0.0.1 "elasticsearch" http://monelasticsearch:9200```
 
 ## 3 
 ### Ajouter maintenant le script /entrypoint.sh dans l'image, faire de ce script l'entrypoint et rebuilder l'image. 
@@ -48,6 +48,6 @@ docker run --rm --network=elasticsearch_nw batch "elasticsearch" http://monelast
 ```RUN echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf```
 
 ```
-docker build . -t webapp
-docker run -d --rm -p 8080:8080 webapp 
+docker build . -t webapp:0.0.1
+docker run -d --rm -p 8080:8080 webapp:0.0.1
 ```
