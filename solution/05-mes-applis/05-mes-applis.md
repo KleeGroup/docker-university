@@ -43,8 +43,9 @@ docker run --rm --network=elasticsearch_nw batch "elasticsearch" http://monelast
 
 ## 5 
 ### En utilisant le war dans le répertoire webapp, créer une image exécutant un serveur tomcat 8. Ce serveur doit être accessible de l'exterieur. Naviguer sur http://localhost:8080/webapp/ . Le site doit être accessible.
-**Note : Ajouter la ligne : **
-RUN echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf
+**Note : Ajouter la ligne :**
+
+```RUN echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf```
 
 ```
 docker build . -t webapp
