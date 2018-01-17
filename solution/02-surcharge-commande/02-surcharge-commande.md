@@ -1,8 +1,8 @@
 ## 1
-### Executer le programme hello à la racine
+### Exécuter le programme hello à la racine
 ```docker run --rm hello-world /hello```
 
-### Est-il possible d'executer un "ls" avec l'image hello-world ? 
+### Est-il possible d'exécuter un "ls" avec l'image hello-world ? 
 ```docker run --rm hello-world ls```
 
 Non
