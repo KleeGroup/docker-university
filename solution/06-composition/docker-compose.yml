@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  
+  webapp-a-0-0-1:
+    image: webapp:0.0.1
+    ports:
+        - 8080
+    networks:
+        - webapp-network
+
+  webapp-b-0-0-1:
+    image: webapp:0.0.1
+    ports:
+        - 8080
+    networks:
+        - webapp-network
+  
+  webapp-c-0-0-1:
+    image: webapp:0.0.1
+    ports:
+        - 8080
+    networks:
+        - webapp-network
+
+  haproxy-webapp-1-5:
+    image: haproxy-webapp:1.5
+    ports:
+        - 8080:8080
+        - 8081:8081
+    networks:
+        - webapp-network
+
+networks:
+    webapp-network:
+

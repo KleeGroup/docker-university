@@ -1,0 +1,6 @@
+FROM tomcat:8.5-jre8-alpine
+
+RUN echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf
+
+COPY webapp.war /usr/local/tomcat/webapps/
+

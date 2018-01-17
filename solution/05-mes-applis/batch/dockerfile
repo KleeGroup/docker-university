@@ -1,0 +1,7 @@
+FROM java:8u111-jre-alpine
+
+COPY batch-0.0.1.jar /opt/monapp/
+COPY entrypoint.sh /entrypoint.sh
+
+#ENTRYPOINT ["java", "-jar", "/opt/monapp/batch-0.0.1.jar"]
+ENTRYPOINT ["/entrypoint.sh"]
