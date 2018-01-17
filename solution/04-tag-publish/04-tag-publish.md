@@ -3,7 +3,7 @@
 ### Tagger l'image custom buildée dans l'exercice 3 avec votre nom et la version 0.0.1. 
 ```docker tag <image-id> <votre-nom>:0.0.1```
 
-### Verifier que l'image soit correctement taggée en listant les images.
+### Vérifier que l'image soit correctement taggée en listant les images.
 ```docker images```
 
 ## 2
@@ -16,7 +16,7 @@ docker push docker-vertigo.part.klee.lan.net:5000/<votre-nom>
 ```
 
 ***NOTE 2: En cas de problème avec docker-vertigo.part.klee.lan.net essayer en localhost : 
-Ajout dans la conf docker (daemon.json): { "insecure-registries":["localhost:5000"] }***
+Ajouter dans la conf docker (daemon.json): { "insecure-registries":["localhost:5000"] }***
 
 ```
 docker run -d -p 5000:5000 registry:2
