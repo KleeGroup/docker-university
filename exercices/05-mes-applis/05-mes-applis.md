@@ -18,12 +18,15 @@
 
 ### Exécuter l'image avec les paramètres ```elasticsearch http://monelasticsearch:9200```
 
+L'url doit s'afficher dans la console et l'appel au serveur elasticsearch doit échouer.
 
 ## 3 
 ### Ajouter maintenant le script /entrypoint.sh dans l'image, faire de ce script l'entrypoint et rebuilder l'image. 
 
 
-### Lancer maintenant le conteneur de manière à passer l'url d'élasticsearch (```http://monelasticsearch:9200```) dans la variable d'environement ```URL_ELASTICSEARCH``` et non en second paramètre du conteneur. L'url doit s'afficher dans la console et l'appel au serveur elasticsearch doit échouer.
+### Lancer maintenant le conteneur de manière à passer l'url d'élasticsearch (```http://monelasticsearch:9200```) dans la variable d'environement ```URL_ELASTICSEARCH``` et non en second paramètre du conteneur.
+
+L'url doit s'afficher dans la console et l'appel au serveur elasticsearch doit échouer.
 
 
 ## 4 
