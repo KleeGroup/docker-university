@@ -24,11 +24,11 @@ Hello from batch
 
 ### Exécuter l'image avec les paramètres ```elasticsearch http://<ip-container>:9200```
 
+L'url doit s'afficher dans la console et l'appel au serveur elasticsearch doit échouer.
 
 ## 3 Batch v2
 ### Ajouter maintenant le script /entrypoint.sh dans l'image, faire de ce script l'entrypoint et rebuilder l'image.
 Le script /entrypoint.sh permet de récupérer la variable d'environnement "URL_ELASTICSEARCH" et d'appeler le batch java avec les paramètres "elasticsearch http://<ip-container>:9200".
-
 
 ### Lancer maintenant le conteneur de manière à passer l'IP d'élasticsearch (```http://x.x.x.x:9200``` x.x.x.x correspond à l'IP de la machine ES) dans la variable d'environnement ```URL_ELASTICSEARCH``` et non en second paramètre du conteneur. L'url doit s'afficher dans la console et le serveur doit répondre ses infos en JSON.
 
