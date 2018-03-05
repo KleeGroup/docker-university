@@ -24,7 +24,7 @@ La sortie standard doit afficher :
 ```args:0
 Hello from batch
 ```
-2.### Exécuter l'image avec les paramètres ```elasticsearch http://<ip-container>:9200```
+2. Exécuter l'image avec les paramètres ```elasticsearch http://<ip-container>:9200```
 
 L'url doit s'afficher dans la console et l'appel au serveur elasticsearch doit échouer.
 
