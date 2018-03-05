@@ -13,15 +13,17 @@ docker inspect <container_id>
 
 ## 2 Batch v1
 1. En utilisant le jar dans le répertoire batch, créer une image permettant d'exécuter le jar avec java 8 ("java -jar batch-0.0.1.jar")
+
 **HINT 1**: Utiliser ENTRYPOINT et COPY. Ne pas utiliser entrypoint.sh
+
 **HINT 2**: Utiliser de preference l'image de base openjdk:8-jdk-stretch
 
 
 ### Exécuter l'image sans paramètre.
 La sortie standard doit afficher : 
-args:0
+```args:0
 Hello from batch
-
+```
 2.### Exécuter l'image avec les paramètres ```elasticsearch http://<ip-container>:9200```
 
 L'url doit s'afficher dans la console et l'appel au serveur elasticsearch doit échouer.
@@ -35,6 +37,7 @@ Le script /entrypoint.sh permet de récupérer la variable d'environnement "URL_
 
 ## 4 Network v1
 1. Lancer le conteneur avec le nom du conteneur à la place l'adresse IP. Le résultat doit afficher le status du noeud elasticsearch.
+
 **HINT : 2 Solutions : User-Defined network ou Legacy Link**
 
 **Solution 1: User-Defined network**
@@ -45,6 +48,7 @@ Le script /entrypoint.sh permet de récupérer la variable d'environnement "URL_
 
 ## 5 Network v2
 1. En utilisant le war dans le répertoire webapp, créer une image exécutant un serveur tomcat 8. Ce serveur doit être accessible de l'exterieur. Naviguer sur http://localhost:8080/webapp/ .
+
 **Note : Ajouter la ligne :**
 
 ```RUN echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf```
