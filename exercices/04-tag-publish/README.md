@@ -7,10 +7,14 @@
 
 ## 2 Publish
 1. Publier votre version sur la registry privée de vertigo : docker-vertigo.part.klee.lan.net:5000
-**NOTE**: Ajouter dans la conf docker (daemon.json): { "insecure-registries":["docker-vertigo.part.klee.lan.net:5000"] }
+
+**NOTE**: Ajouter dans la conf docker (daemon.json): ```{ "insecure-registries":["docker-vertigo.part.klee.lan.net:5000"] }```
 
 **NOTE 2**: En cas de problème avec docker-vertigo.part.klee.lan.net essayer en localhost : 
-docker run -d -p 5000:5000 registry:2.6.2 
-Ajouter dans la conf docker (daemon.json): { "insecure-registries":["localhost:5000"] }
+
+```docker run -d -p 5000:5000 registry:2.6.2``` 
+
+Ajouter dans la conf docker (daemon.json): 
+```{ "insecure-registries":["localhost:5000"] }```
 
 
