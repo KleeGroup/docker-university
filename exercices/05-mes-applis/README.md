@@ -27,7 +27,7 @@ Hello from batch
 ```
 2. Exécuter l'image avec les paramètres ```elasticsearch http://<ip-container>:9200```
 
-L'url doit s'afficher dans la console et l'appel au serveur elasticsearch doit échouer.
+L'url doit s'afficher dans la console et l'appel au serveur elasticsearch doit retourner le status JSON d'ES.
 
 ## 3 Batch v2
 1. Ajouter maintenant le script /entrypoint.sh dans l'image, faire de ce script l'entrypoint et rebuilder l'image.
