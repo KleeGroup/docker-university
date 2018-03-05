@@ -1,4 +1,4 @@
-FROM java:8u111-jre-alpine
+FROM openjdk:8-jdk-stretch
 
 COPY batch-0.0.1.jar /opt/monapp/
 COPY entrypoint.sh /entrypoint.sh

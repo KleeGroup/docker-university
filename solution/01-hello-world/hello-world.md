@@ -13,7 +13,7 @@ xxxxx
 ### Démarrer le conteneur à partir de l'image récupérée
 https://docs.docker.com/engine/reference/commandline/start/
 
-```docker start xxxxx```
+```docker start xxxxx -i```
 
 ## 2
 ### Démarrer le conteneur à partir de l'image récupérée

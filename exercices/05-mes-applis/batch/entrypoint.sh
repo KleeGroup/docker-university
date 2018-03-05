@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 set -e
 
 if  [ -n "$URL_ELASTICSEARCH" ] && [ "$1" == "elasticsearch" ]; then
