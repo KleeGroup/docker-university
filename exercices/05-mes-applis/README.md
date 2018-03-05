@@ -6,9 +6,9 @@
 2. Vérifier que le conteneur soit bien à l'état 'Running'.
 Depuis l'hote, avec un navigateur tester l'url http://localhost:9200/ : la connexion doit entrer en timeout.
 
-3. Depuis un nouveau conteneur (image alpine 3.7), executer la commande "wget -qO- <ip-container>:9200" sur l'adresse IP du conteneur, le serveur doit répondre avec son status en JSON.
+3. Depuis un nouveau conteneur (image alpine 3.7), executer la commande ```wget -qO- <ip-container>:9200``` sur l'adresse IP du conteneur, le serveur doit répondre avec son status en JSON.
 L'adresse IP d'un conteneur peut-être récupérer avec la commande : 
-docker inspect <container_id>
+```docker inspect <container_id>```
 
 
 ## 2 Batch v1
