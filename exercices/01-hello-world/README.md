@@ -1,6 +1,8 @@
 ## 1 Step by Step
 
-1. Récupérer l'image hello-world de la registry docker officielle : https://hub.docker.com/explore/.
+1. Récupérer l'image hello-world de la registry docker officielle : https://hub.docker.com/explore/. 
+Le proxy doit être configuré
+
 https://docs.docker.com/engine/reference/commandline/pull/
 
 

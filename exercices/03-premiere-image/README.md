@@ -1,9 +1,9 @@
 
-### Builder une image en modifiant la commande par default par ```echo <votre-nom>```
+1. Builder une image et ajouter la commande par default ```echo <votre-nom>```
+
+2. Instancier cette nouvelle image dans un nouveau conteneur (ne pas oublier de cleaner le conteneur après execution)
 
 
-### Exécuter un nouveau conteneur utilisant cette nouvelle image (ne pas oublier de cleaner le conteneur après execution)
+3. Instancier à nouveau cette image en surchargant la commande par ```pwd```
 
-
-### Exécuter un nouveau conteneur en surchargant la commande par ```pwd```
 

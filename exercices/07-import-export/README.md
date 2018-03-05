@@ -1,13 +1,13 @@
+## Import/Export
 
-### Exporter l'image webapp dans un tar.
-
-
-### Supprimer l'image en local. Lister les images et vérifier que l'image ne soit plus disponible.
+1. Exporter l'image webapp dans un tar.
 
 
-### Importer l'image à partir du tar. 
+2. Supprimer l'image en local. Lister les images et vérifier que l'image ne soit plus disponible.
 
 
-### Lister les images et vérifier l'image soit de nouveau disponible.
+3. Importer l'image à partir du tar. 
 
+
+4. Lister les images et vérifier l'image soit de nouveau disponible.
 
