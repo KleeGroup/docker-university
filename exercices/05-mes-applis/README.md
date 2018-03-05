@@ -12,7 +12,7 @@ L'adresse IP d'un conteneur peut-être récupérée avec la commande :
 
 
 ## 2 Batch v1
-1. En utilisant le jar dans le répertoire batch, créer une image permettant d'exécuter le jar avec java 8 ("java -jar batch-0.0.1.jar")
+1. En utilisant le jar dans le répertoire batch, créer une image permettant d'exécuter le jar avec java 8 (```java -jar batch-0.0.1.jar```)
 
 **HINT 1**: Utiliser ENTRYPOINT et COPY. Ne pas utiliser entrypoint.sh
 
@@ -21,7 +21,8 @@ L'adresse IP d'un conteneur peut-être récupérée avec la commande :
 
 ### Exécuter l'image sans paramètre.
 La sortie standard doit afficher : 
-```args:0
+```
+args:0
 Hello from batch
 ```
 2. Exécuter l'image avec les paramètres ```elasticsearch http://<ip-container>:9200```
@@ -30,9 +31,9 @@ L'url doit s'afficher dans la console et l'appel au serveur elasticsearch doit �
 
 ## 3 Batch v2
 1. Ajouter maintenant le script /entrypoint.sh dans l'image, faire de ce script l'entrypoint et rebuilder l'image.
-Le script /entrypoint.sh permet de récupérer la variable d'environnement "URL_ELASTICSEARCH" et d'appeler le batch java avec les paramètres "elasticsearch http://<ip-container>:9200".
+Le script /entrypoint.sh permet de récupérer la variable d'environnement "URL_ELASTICSEARCH" et d'appeler le batch java avec les paramètres ```elasticsearch http://<ip-container>:9200```.
 
-2. Lancer maintenant le conteneur de manière à passer l'IP d'élasticsearch (```http://x.x.x.x:9200``` x.x.x.x correspond à l'IP de la machine ES) dans la variable d'environnement ```URL_ELASTICSEARCH``` et non en second paramètre du conteneur. L'url doit s'afficher dans la console et le serveur doit répondre ses infos en JSON.
+2. Lancer maintenant le conteneur de manière à passer l'IP d'élasticsearch (```http://x.x.x.x:9200``` ```x.x.x.x``` correspond à l'IP de la machine ES) dans la variable d'environnement ```URL_ELASTICSEARCH``` et non en second paramètre du conteneur. L'url doit s'afficher dans la console et le serveur doit répondre ses infos en JSON.
 
 
 ## 4 Network v1
@@ -51,5 +52,7 @@ Le script /entrypoint.sh permet de récupérer la variable d'environnement "URL_
 
 **Note : Ajouter la ligne :**
 
-```RUN echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf```
+```
+RUN echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf
+```
 
